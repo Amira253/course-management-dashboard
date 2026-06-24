@@ -1,0 +1,162 @@
+<div class="page-wrapper">
+  <h1 class="page-title">Course Management Dashboard</h1>
+
+
+  <div class="toolbar">
+
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+
+    <input
+      matInput
+      [(ngModel)]="searchTerm"
+      (input)="applyFilters()">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Status</mat-label>
+
+    <mat-select
+      [(ngModel)]="selectedStatus"
+      (selectionChange)="applyFilters()">
+
+      <mat-option value="">
+        All
+      </mat-option>
+
+      <mat-option value="Active">
+        Active
+      </mat-option>
+
+      <mat-option value="Draft">
+        Draft
+      </mat-option>
+
+      <mat-option value="Archived">
+        Archived
+      </mat-option>
+
+    </mat-select>
+  </mat-form-field>
+
+  <button class="btn-primary",
+    mat-raised-button
+    color="primary"
+    routerLink="/courses/add">
+
+    Add Course
+  </button>
+
+</div>
+
+@if(isLoading){
+
+  <p>Loading Courses...</p>
+
+}
+
+<div class="table-container">
+  <table mat-table [dataSource]="dataSource" matSort>
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>ID</th>
+    <td mat-cell *matCellDef="let course; let i= index">
+      {{i+1}}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="courseName">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Course</th>
+    <td mat-cell *matCellDef="let course">
+      {{course.courseName}}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="instructorName">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Instructor</th>
+    <td mat-cell *matCellDef="let course">
+      {{course.instructorName}}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="category">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Category</th>
+    <td mat-cell *matCellDef="let course">
+      {{course.category}}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="status">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+    <td mat-cell *matCellDef="let course">
+      <span 
+      [class]="course.status === 'Active'? 
+      'status-active': course.status === 'Draft'? 
+      'status-draft': 'status-archived'">
+       {{course.status}}
+      </span>
+  
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef>Actions</th>
+
+    <td mat-cell *matCellDef="let course">
+
+      <button
+        mat-icon-button
+        [routerLink]="['/courses', course.id]">
+
+        <mat-icon>visibility</mat-icon>
+      </button>
+
+      <button
+        mat-icon-button
+        [routerLink]="['/courses/edit', course.id]">
+
+        <mat-icon>edit</mat-icon>
+      </button>
+
+      <button mat-icon-button
+      (click)="deleteCourse(course.id)">
+
+        <mat-icon>delete</mat-icon>
+
+      </button>
+
+    </td>
+  </ng-container>
+
+  <tr
+    mat-header-row
+    *matHeaderRowDef="displayedColumns">
+  </tr>
+
+  <tr
+    mat-row
+    *matRowDef="let row; columns: displayedColumns">
+  </tr>
+
+ </table>
+
+ @if(dataSource.data.length === 0){
+
+  <div class="empty-state">
+
+    No Courses Found
+
+  </div>
+
+}
+<mat-paginator
+  [pageSize]="5"
+  [pageSizeOptions]="[5,10,20]"
+  showFirstLastButtons>
+</mat-paginator>
+</div>
+
+
+
+</div>
+

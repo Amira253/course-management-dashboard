@@ -1,0 +1,32 @@
+@if(course){
+
+<div class="details-card">
+
+  <h2>{{course.courseName}}</h2>
+
+  <p><strong>Instructor:</strong> {{course.instructorName}}</p>
+
+  <p><strong>Category:</strong> {{course.category}}</p>
+
+  <p><strong>Duration:</strong> {{course.duration}} Hours</p>
+
+  <p><strong>Price:</strong> {{course.price}} EGP</p>
+
+  <p><strong>Status:</strong> {{course.status}}</p>
+
+  <p><strong>Description:</strong> {{course.description}}</p>
+
+  <p><strong>Created:</strong> {{course.createdDate}}</p>
+
+  <button class = 'btn-primary'
+    mat-raised-button
+    color="primary"
+    (click)="goBack()">
+
+    Back
+
+  </button>
+
+</div>
+
+}

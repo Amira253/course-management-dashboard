@@ -1,0 +1,21 @@
+.details-card {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.details-card h2 {
+  color: #1e3a5f;
+  margin-bottom: 24px;
+}
+
+.details-card p {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+.btn-primary{
+  color: #f8fbff !important;
+}

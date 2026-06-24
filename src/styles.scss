@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  font-family: Roboto, sans-serif;
+  color: #2c3e50;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-container {
+  padding: 32px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin-bottom: 24px;
+}
+
+.mat-mdc-raised-button.mat-primary {
+  background-color: #1e3a5f !important;
+}
+
+.mat-mdc-raised-button.mat-primary:hover {
+  background-color: #274a77 !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: #ffffff !important;
+  border: 2px solid #1e3a5f !important;
+  border-radius: 8px;
+}
+
+.mdc-text-field--filled .mdc-floating-label {
+  color: #1e3a5f !important;
+}
+
+.mdc-text-field__input {
+  color: #1e3a5f !important;
+}

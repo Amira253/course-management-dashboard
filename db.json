@@ -1,0 +1,148 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "courseName": "Angular Fundamentals",
+      "instructorName": "Ahmed Ali",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 1500,
+      "status": "Active",
+      "description": "Intro to Angular",
+      "createdDate": "2026-06-01"
+    },
+    {
+      "courseName": "Node.js Basics",
+      "instructorName": "Asma Mohamed ",
+      "category": "Backend",
+      "duration": 15,
+      "price": 1200,
+      "status": "Draft",
+      "description": "Node fundamentals",
+      "createdDate": "2026-06-24",
+      "id": "2"
+    },
+    {
+      "courseName": ".Net Basics",
+      "instructorName": "May Mohamed ",
+      "category": "Backend",
+      "duration": 17,
+      "price": 3000,
+      "status": "Active",
+      "description": "Back End",
+      "createdDate": "2026-06-24",
+      "id": "_O2VC0Wb64Q"
+    },
+    {
+      "createdDate": "2026-06-24",
+      "courseName": "React",
+      "instructorName": "asmaa Ahmed",
+      "category": "Front End",
+      "duration": 27,
+      "price": 2500,
+      "status": "Draft",
+      "description": "Front End",
+      "id": "P0HpOQTP0G8"
+    },
+    {
+      "createdDate": "2026-06-24",
+      "courseName": ".Net Basics",
+      "instructorName": "Asmaa Mohamed",
+      "category": "Back End",
+      "duration": 21,
+      "price": 1000,
+      "status": "Archived",
+      "description": "Back End",
+      "id": "meaLuZ0j9-M"
+    },
+    {
+      "courseName": "React",
+      "instructorName": "Jana Ahmed",
+      "category": "Front End",
+      "duration": 7,
+      "price": 500,
+      "status": "Draft",
+      "description": "Front End",
+      "createdDate": "2026-06-24",
+      "id": "mz3UU7f34Co"
+    },
+    {
+      "id": "9",
+      "courseName": "Angular Fundamentals",
+      "instructorName": "Ahmed Ali",
+      "category": "Frontend",
+      "duration": 20,
+      "price": 1500,
+      "status": "Active",
+      "description": "Intro to Angular",
+      "createdDate": "2026-06-01"
+    },
+    {
+      "courseName": "Node.js Basics",
+      "instructorName": "Asma Mohamed ",
+      "category": "Backend",
+      "duration": 15,
+      "price": 1200,
+      "status": "Draft",
+      "description": "Node fundamentals",
+      "createdDate": "2026-06-24",
+      "id": "8"
+    },
+    {
+      "courseName": ".Net Basics",
+      "instructorName": "May Mohamed ",
+      "category": "Backend",
+      "duration": 17,
+      "price": 3000,
+      "status": "Active",
+      "description": "Back End",
+      "createdDate": "2026-06-24",
+      "id": "6"
+    },
+    {
+      "createdDate": "2026-06-24",
+      "courseName": "React",
+      "instructorName": "asmaa Ahmed",
+      "category": "Front End",
+      "duration": 27,
+      "price": 2500,
+      "status": "Draft",
+      "description": "Front End",
+      "id": "3"
+    },
+    {
+      "courseName": "React",
+      "instructorName": "Jana Ahmed",
+      "category": "Front End",
+      "duration": 7,
+      "price": 500,
+      "status": "Draft",
+      "description": "Front End",
+      "createdDate": "2026-06-24",
+      "id": "5"
+    },
+    {
+      "courseName": "Angular",
+      "instructorName": "Amr mohamed",
+      "category": "Front End",
+      "duration": 27,
+      "price": 4500,
+      "status": "Active",
+      "description": "Front End",
+      "createdDate": "2026-06-24",
+      "id": "mwLQOVqt8uE"
+    },
+    {
+      "courseName": "Angular",
+      "instructorName": "Ahmed Nader",
+      "category": "Front End",
+      "duration": 24,
+      "price": 5000,
+      "status": "Archived",
+      "description": "Front End",
+      "createdDate": "2026-06-24",
+      "id": "C4A1JPrVYrE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

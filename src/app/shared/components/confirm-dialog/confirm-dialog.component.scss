@@ -1,0 +1,27 @@
+mat-dialog-content {
+  padding: 16px 24px !important;
+  color: #334155 !important; /* نص رمادي غامق */
+  background-color: #ffffff !important; /* gray فاتح جدًا */
+  line-height: 1.6;
+}
+
+mat-dialog-actions {
+  padding: 16px 24px !important;
+  background-color: #ffffff !important;
+  border-top: 1px solid #ffffff !important;
+  gap: 12px;
+}
+mat-dialog-title {
+  color: #1e293b !important;
+  font-weight: 600;
+  padding: 20px 24px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.mat-mdc-dialog-surface {
+  border-radius: 12px !important;
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+}
+.btn-primary{
+  color: #f8fbff !important;
+}
