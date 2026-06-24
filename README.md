@@ -117,15 +117,15 @@ http://localhost:4200
 
 ## Screenshots
 
-![Dashboard](screenshots/Dashboard.png)
+![Dashboard](./screenshots/Dashboard.png)
 
-![Course Form](screenshots/Course-form.png)
+![Course Form](./screenshots/Course-form.png)
 
-![Course details](screenshots/Course-details.png)
+![Course details](./screenshots/Course-details.png)
 
-![Edit Course](screenshots/Edit-Course.png)
+![Edit Course](./screenshots/Edit-Course.png)
 
-![Confirm dialog](screenshots/Confirm-dialog.png)
+![Confirm dialog](./screenshots/Confirm-dialog.png)
 
 
 
