@@ -1,59 +1,141 @@
-# CourseManagementDashboard
+# Course Management Dashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+## Overview
 
-## Development server
+Course Management Dashboard is a responsive web application built with Angular 19 that allows users to manage courses efficiently through a modern and user-friendly interface.
 
-To start a local development server, run:
+The application supports creating, viewing, updating, and deleting courses, along with search, filtering, sorting, and pagination features.
 
-```bash
+---
+
+## Features
+
+### Core Features
+
+- View all courses in a data table
+- Add a new course
+- Edit existing courses
+- Delete courses
+- View course details
+- Search courses by name
+- Filter courses by status
+- Form validation using Reactive Forms
+
+### Additional Features
+
+- Lazy Loaded Routes
+- Angular Material UI
+- Pagination
+- Sorting
+- Snackbar Notifications
+- Confirmation Dialog before Delete
+- Loading State
+- Empty State
+- Responsive Design
+
+---
+
+## Technologies Used
+
+- Angular 19
+- TypeScript
+- Angular Material
+- RxJS
+- SCSS
+- JSON Server
+
+---
+
+## Project Structure
+src/app
+│
+├── features
+│   └── courses
+│       ├── components
+│       ├── models
+│       ├── pages
+│       ├── services
+│       └── courses.routes.ts
+│
+├── shared
+│   └── components
+│
+├── app.config.ts
+├── app.routes.ts
+
+---
+
+## Installation
+
+Clone the repository:
+git clone <repository-url>
+
+Navigate to the project folder:
+cd course-management-dashboard
+
+Install dependencies:
+npm install
+
+---
+
+## Running the Application
+
+### Start Mock API
+npm run mock-api
+
+The API will run on:
+http://localhost:3000
+
+### Start Angular Application
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The application will be available at:
+http://localhost:4200
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Available Functionality
 
-```bash
-ng generate component component-name
-```
+| Feature 
+|----------|----------|
+| View Courses 
+| Add Course 
+| Edit Course 
+| Delete Course 
+| Course Details 
+| Search 
+| Filter 
+| Pagination 
+| Sorting 
+| Snackbar Notifications 
+| Confirmation Dialog 
+| Loading State 
+| Empty State 
+| Lazy Loading 
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Screenshots
 
-## Building
+![Dashboard](screenshots/Dashboard.png)
 
-To build the project run:
+![Course Form](screenshots/Course-form.png)
 
-```bash
-ng build
-```
+![Course details](screenshots/Course-details.png)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+![Edit Course](screenshots/Edit-Course.png)
 
-## Running unit tests
+![Confirm dialog](screenshots/Confirm-dialog.png)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## Author
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Amira Ibrahim
 
-## Additional Resources
+Frontend Developer
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
